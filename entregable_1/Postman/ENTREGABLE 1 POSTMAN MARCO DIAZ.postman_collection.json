@@ -1,0 +1,134 @@
+{
+	"info": {
+		"_postman_id": "42a489c8-9414-4b0b-9e8d-6a76a202d8b3",
+		"name": "ENTREGABLE 1 POSTMAN MARCO DIAZ",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "7815714"
+	},
+	"item": [
+		{
+			"name": "peticionGetAll",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}{{path1}}",
+					"host": [
+						"{{base_url}}{{path1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticionGetId",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{base_url}}{{path1}}{{param2}}",
+					"host": [
+						"{{base_url}}{{path1}}{{param2}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticionPost",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"postId\": 1,\n    \"id\": 8,\n    \"name\": \"marco diaz\",\n    \"email\": \"marco@ejemplo.biz\",\n    \"body\": \"para entregable post\"\n  }\n\n"
+				},
+				"url": {
+					"raw": "{{base_url}}{{path1}}",
+					"host": [
+						"{{base_url}}{{path1}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticionPut",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"uso de put\",\n  \"body\": \"se usa verbo put\"\n}"
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/8",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticionPatch",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"title\": \"uso de put\"\n}"
+				},
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/8",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"8"
+					],
+					"query": [
+						{
+							"key": "title",
+							"value": "uso de patch",
+							"disabled": true
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "peticionDelete",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://jsonplaceholder.typicode.com/posts/8",
+					"protocol": "https",
+					"host": [
+						"jsonplaceholder",
+						"typicode",
+						"com"
+					],
+					"path": [
+						"posts",
+						"8"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
